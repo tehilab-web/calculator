@@ -1,0 +1,112 @@
+/* table{
+    margin: auto;
+}
+
+
+input[type="button"]{
+    width: 100%; 
+    padding: 15px 45px; 
+    background-color: pink; 
+    font-size: 20px; 
+    font-weight: bold; 
+    border-radius: 5px;
+
+
+
+}
+
+input[type="text"] { 
+    padding: 18px ; 
+    font-size: 15px; 
+    font-weight: bold; 
+    border-radius: 5px; 
+    border: 2px solid black; 
+} */
+* {
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* עיצוב דף */
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f0f5;
+  }
+  
+  /* עיצוב טבלה */
+  #calcu {
+    border-collapse: collapse;
+    margin: 0 auto;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  /* עיצוב שדות התוצאה והקלט */
+  #inputs,
+  #result {
+    width: 100%;
+    padding: 15px;
+    font-size: 18px;
+    text-align: right;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    outline: none;
+  }
+  
+  #result {
+    background-color: #f8f8f8;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  /* עיצוב כללי לכפתורים */
+  input[type="button"] {
+    width: 100%;
+    padding: 20px;
+    font-size: 18px;
+    color: #333;
+    border: 1px solid #ddd;
+    background-color: #f8f8f8;
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+  
+  input[type="button"]:hover {
+    background-color: #e0e0e0;
+  }
+  
+  input[type="button"]:active {
+    background-color: #d4d4d4;
+    box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* צבעים ייחודיים לפעולות */
+  input[type="button"][value="+"],
+  input[type="button"][value="-"],
+  input[type="button"][value="*"],
+  input[type="button"][value="/"],
+  input[type="button"][value="^"] {
+    background-color: #4caf50;
+    color: #fff;
+    font-weight: bold;
+  }
+  
+  input[type="button"][value="c"],
+  input[type="button"][value="d"] {
+    background-color: #f44336;
+    color: #fff;
+    font-weight: bold;
+  }
+  
+  input[type="button"][value="="] {
+    background-color: #2196f3;
+    color: #fff;
+    font-weight: bold;
+  }
